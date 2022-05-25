@@ -11,6 +11,7 @@ RUN apt install software-properties-common -y
 RUN apt install gcc -y
 RUN apt install git -y
 RUN apt install libssl-dev -y
+RUN apt install pkg-config -y
 RUN apt autoremove -y
 RUN curl https://sh.rustup.rs -sSf | bash -s -- -y
 ENV PATH="/root/.cargo/bin:${PATH}"
